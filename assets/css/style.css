@@ -96,7 +96,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #2d71a1;
+  background: #FFFF8F;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -104,6 +104,12 @@ section {
 }
 
 .back-to-top i {
+  font-size: 28px;
+  color: #3687c1;
+  line-height: 0;
+}
+
+.back-to-top i:hover {
   font-size: 28px;
   color: #fff;
   line-height: 0;
@@ -1108,3 +1114,21 @@ section {
   left: 20px; /* Adjust the distance from the left as needed */
   z-index: 1000;
 }
+
+/* Custom CSS for responsive video in mobile view */
+@media (max-width: 768px) {
+  .iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 aspect ratio (height/width) */
+  }
+
+  .youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
